@@ -4,7 +4,8 @@ Created on 2020-11-27
 
 @author: Chrisopher Rose
 
-imports csv file in the format subnet,name into a fortigate configuraiton
+imports csv file in the format subnet,name into a fortigate configuration
+see msft-public-ips.csv as an example format
 """
 import paramiko
 import os
