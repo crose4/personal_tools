@@ -11,13 +11,14 @@ import paramiko
 import os
 import csv
 import re
+from getpass import getpass
 
 ################################input variables################################
 inputfile = 'github public ip block.csv'
 host = "192.168.100.4"
 port = 22
 username = "admin"
-password = "" 
+password = getpass() 
 address_group_name = "github-public-ips"
 login_discalimer = 0 #set to 1 if there is a login disclaimer
 ################################_______________################################
