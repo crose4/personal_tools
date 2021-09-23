@@ -1,10 +1,13 @@
+#very bare bones
 
+Connect-ExchangeOnline
+Connect-MsolService
 
 $mf= New-Object -TypeName Microsoft.Online.Administration.StrongAuthenticationRequirement
 $mf.RelyingParty = "*"
 $mfa = @($mf)
 
-$list = @()
+$list = @() #input your string array of names
 
 
 foreach ($user in $list) {
